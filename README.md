@@ -1,27 +1,49 @@
-# SearchOutlet
+### To Run Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+### Install Software
 
-## Development server
+* Latest Node JS : from https://nodejs.org/en/
+* Git Client : https://git-scm.com/downloads
+* Angular Cli : on command prompt: npm install -g @angular/cli
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Clone the Application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* open the command line
+* git clone https://github.com/sumitkumar2019/search-outlet.git
+* go to the directory search-outlet: add command to the command line : CD search-outlet
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Install Dependencies
 
-## Running unit tests
+```
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Create Google Api key and place inside app.module.ts : line no 15 like below:
+AgmCoreModule.forRoot({
+      apiKey:'XXXXSyCm60JE2uXXXXXXXGYuWKIRXXXXXXXX',
+      libraries:['places', 'geometry' ]
+    });
 
-## Running end-to-end tests
+#Note:
+       
+* Enter your google api key and enable all the google map
+* For More Information on how to create see: https://developers.google.com/maps/documentation/javascript/get-api-key
+* Also Enable all the Geo Api like: from https://console.cloud.google.com/google/maps-apis/api-list?project=(as per google project project_name)
+        - Directions API
+        - Distance Matrix
+        - Geocoding API
+        - Maps Elevation API
+        - Maps JavaScript API
+        - Places API
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Run the Application
 
-## Further help
+```
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Now browse to the app at [`localhost:4200'].
+
+Thank You
