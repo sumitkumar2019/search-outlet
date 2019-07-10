@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     AgmCoreModule.forRoot({
        /** 
-        * Here enter your google api key and enable all the google map
+        * Here enter your google api key and enable all the google map geo api available
         * For More Information on how to create see: https://developers.google.com/maps/documentation/javascript/get-api-key
         * Also Enable all the Geo Api like: from https://console.cloud.google.com/google/maps-apis/api-list?project=(as per google project project_name)
         * Directions API
